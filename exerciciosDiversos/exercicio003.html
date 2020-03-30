@@ -1,0 +1,25 @@
+<!--Faça uma saída de soma de 2 inteiros, ex: alert(2 + 2)-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerccicio 003</title>
+</head>
+<body>
+    <input type="number" id="numero1">
+    <input type="number" id="numero2">
+    <input type="button" value="enviar" onclick="somar()">
+    <script>
+        function somar() {
+            var num1 = document.getElementById('numero1')
+            var num2 = document.getElementById('numero2')
+            var num1 = Number(num1.value)
+            var num2 = Number(num2.value)
+            var soma = num1 + num2
+            alert(soma)
+        }
+    </script>
+</body>
+</html>
