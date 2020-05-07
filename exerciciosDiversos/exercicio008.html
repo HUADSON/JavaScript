@@ -1,0 +1,25 @@
+<!--(8) Crie um campo texto parar preencher um CPF <input maxlength="11" id="cpf" />,
+    e exiba ao lado com pontuação conforme preencher-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 7</title>
+    </head>
+    <body>
+        <div>
+            CPF: <input type="text" maxlength="11" id="cpf" onload="pontuar()">
+            <p id="cpfComPontuacao"></p>
+        </div>
+        
+        <script>
+            function pontuar(){
+                var cpf = document.getElementById("cpf")
+                document.createElement("cpfComPontuacao").p=`${cpf}`
+            }
+            
+        </script>
+    </body>
+    </html>
